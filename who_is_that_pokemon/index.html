@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who is that pokemon?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <h2>Who is that pokemon?</h2>
+        <div id="pokemonContainer" style="display: none;">
+            <form id="pokemonForm">
+                <input type="text" id="pokemonInput">
+                <button type="submit" onclick="">Guess</button>
+            </form>
+            <p id="message"></p>
+            <div>
+                <img src="" id="pokemonImage">
+                <p id="counter">Tries left: 3</p>
+                <p id="pokemon" style="display: none;"></p>
+                <p id="pokemonName"></p>
+            </div>
+        </div>
+        <button id="play" onclick="play()">Play</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

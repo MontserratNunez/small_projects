@@ -1,0 +1,175 @@
+*{
+    font-family: Verdana, 'Trebuchet MS', Arial, sans-serif;
+    margin: 0;
+    color: white;
+}
+
+html, body {
+    height: 100%;
+}
+
+body{
+    background: rgb(8,206,191);
+    background: radial-gradient(circle, rgba(8,206,191,1) 0%, rgba(0,129,180,1) 100%);
+    display: flex;
+    justify-content: center;
+}
+
+button, .card{
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+button{
+    border: none;
+}
+
+.center-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-self{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.column{
+    flex-direction: column;
+}
+
+.none{
+    display: none;
+}
+
+/*--- --- --- --- --- MENU --- --- --- --- ---*/
+
+.chooseContainer{
+    gap: 30px;
+    background-color: #1e4591;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.buttonContainer{
+    gap: 10px;
+}
+
+.divChoose{
+    background-color: #2455b6;
+    padding: 20px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.choose{
+    background-color: #FB413B;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+/*--- --- --- --- --- END MENU --- --- --- --- ---*/
+
+
+/*--- --- --- --- --- MAIN --- --- --- --- ---*/
+
+.mainContent{
+    width: 100%;
+    height: fit-content;
+    min-height: 100%;
+}
+
+.cardsContainer{
+    height: fit-content;
+    min-height: calc(100svh - 120px);
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    padding: 10px;
+    align-items: center;
+    justify-items: center;
+}
+
+/*--- --- --- --- --- END MAIN --- --- --- --- ---*/
+
+
+/*--- --- --- --- --- TOP/BOTTOM --- --- --- --- ---*/
+
+.topContent{
+    background-color: #F79E53;
+    height: 50px;
+    gap: 60px;
+    font-size: 25px;
+}
+
+.bottomContent{
+    background-color: #092F7A;
+    height: 50px;
+    gap: 20px;
+}
+
+#reset, #exit{
+    max-width: 250px;
+    width: 15%;
+    min-width: 100px;
+    padding: 10px 20px 10px 20px;
+    font-size: 14px;
+}
+
+.counter{
+    gap: 10px;
+}
+
+#reset{
+    background-color: #2a64d8;
+}
+
+#exit{
+    background-color: hsl(2, 96%, 61%);
+}
+
+/*--- --- --- --- --- END TOP/BOTTOM --- --- --- --- ---*/
+
+
+/*--- --- --- --- --- CARDS --- --- --- --- ---*/
+
+.card{
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 10px 10px 2px rgb(0, 0, 0, 0.1);
+}
+
+.top{
+    background-color: white;
+}
+
+.black{
+    color: black;
+}
+
+.back{
+    background-color: hsl(2, 96%, 61%);
+}
+
+/*--- --- --- --- --- END CARDS --- --- --- --- ---*/
+
+
+/*--- --- --- --- --- STATS --- --- --- --- ---*/
+
+.stats{
+    gap: 20px;
+    background-color: #2a64d8;
+    width: 30%;
+    min-width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+/*--- --- --- --- --- END STATS --- --- --- --- ---*/
